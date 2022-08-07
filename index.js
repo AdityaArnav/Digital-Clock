@@ -7,11 +7,11 @@ function updateTime(){
     let getHours= new Date().getHours();
     let getMinutes = new Date().getMinutes();
     let getSeconds = new Date().getSeconds();
-    let ampm = "AM"
+     ampm.innerText = "AM"
 
-    if(getHours>12){
+    if(getHours>=11){
         getHours= getHours-12
-        ampm = "PM"
+        ampm.innerText = "PM"
     }
     getHours= getHours<10? "0"+getHours: getHours;
     getMinutes= getMinutes<10? "0"+getMinutes: getMinutes;
